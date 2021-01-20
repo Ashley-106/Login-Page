@@ -1,0 +1,26 @@
+/*  --------------
+    animations 
+    ------------
+*/
+
+@keyframes slide-in {
+    0% {
+        bottom: -400px;
+    }
+    100% {
+        bottom: calc(50% - 225px);
+    }
+}
+
+@keyframes rotation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+      }
+  }
+

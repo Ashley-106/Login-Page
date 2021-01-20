@@ -1,0 +1,152 @@
+/*  --------------
+    Global styles
+    ------------
+*/
+
+body {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    background-color: #2a2a2a;
+    border-radius: 1em;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    width: 400px; 
+}
+
+.head-strip {
+    background-color: #111;
+}
+
+.head-strip h1 {
+    color: white;
+    font-size: 2em;
+    margin-left: 25px;
+    padding: 0;
+} 
+
+.info-box {
+    background-color: #2a2a2a;
+    color: lightgray;
+    font-weight: bold;
+    left: 0;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+}
+
+.success-box {
+    animation: slide-in 1000ms ease-in-out;
+    background-color: #2a2a2a;
+    bottom: calc(50% - 225px);
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    left: calc(50% - 200px);
+    position: absolute;
+    text-align: center;
+    width: 400px;
+}
+
+.success-head-strip {
+    background-color: #111;
+    color: lightgray;
+    font-size: 1.1em;
+    padding: 1em;
+}
+
+.success-head-strip h2 {
+    margin: 0;
+}
+
+/*  --------------
+    form styles
+    ------------
+*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.form-inner {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin: 0 25px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.username, .password {
+    padding-top: 3em;
+}
+
+input {
+    background-color: #2a2a2a;
+    border: none;
+    border-bottom: dotted 2px #fff;
+    color: lightgray;
+    font-weight: 400;
+    height: 2.5em;
+    outline: none;   
+} 
+
+input[type=password] {
+    letter-spacing: .8em;
+}
+
+/*  --------------
+    icons/button styles
+    ------------
+*/
+
+#icon {
+    padding-left: 10px; 
+}
+
+.error {
+    color: red;
+    padding-left: 5px;
+}
+
+.button {
+    background-color: #32CA22;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    height: 79px;
+    margin-top: 48px;
+    outline: none;
+    padding: .8em;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:hover {
+    #icon {
+        animation: rotation 1s infinite linear;
+    }
+}
+
+.smiley {
+    color: #32CA22;
+    display: block;
+    font-size: 5em;
+    margin: auto auto;
+}
